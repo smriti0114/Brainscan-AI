@@ -1,0 +1,4 @@
+project_id = "gtnhtwtnrhcoidoihncy"
+
+[functions.analyze-brain-scan]
+verify_jwt = false
