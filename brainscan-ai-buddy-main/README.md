@@ -6,7 +6,7 @@
 
 A modern, AI-powered web application designed to analyze medical imaging (MRI and CT scans) for the detection of brain tumors. Built with high performance and accuracy in mind, this platform leverages advanced machine learning integration within a responsive web interface.
 
-![Project Screenshot](https://lovable.dev/opengraph-image-p98pqg.png)
+
 ## 🌟 Features
 
 * **AI Analysis:** Rapid detection algorithms for analyzing MRI and CT brain scans.
