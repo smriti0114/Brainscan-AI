@@ -1,73 +1,88 @@
-# Welcome to your Lovable project
+# Brain Tumor Detection - AI-Powered Medical Imaging Analysis
 
-## Project info
+![Project Status](https://img.shields.io/badge/Status-Development-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Tech](https://img.shields.io/badge/Built%20With-React%20%7C%20Vite%20%7C%20Supabase-blueviolet)
 
-**URL**: https://lovable.dev/projects/dc6323dc-f398-4d05-a51b-17eaf0216a44
+A modern, AI-powered web application designed to analyze medical imaging (MRI and CT scans) for the detection of brain tumors. Built with high performance and accuracy in mind, this platform leverages advanced machine learning integration within a responsive web interface.
 
-## How can I edit this code?
+![Project Screenshot](https://lovable.dev/opengraph-image-p98pqg.png)
+## 🌟 Features
 
-There are several ways of editing your application.
+* **AI Analysis:** Rapid detection algorithms for analyzing MRI and CT brain scans.
+* **Medical Visualization:** Interactive data visualization using **Recharts**.
+* **Modern UI/UX:** Built with **Shadcn UI** and **Radix Primitives** for an accessible and beautiful interface.
+* **Responsive Design:** Fully responsive layout using **Tailwind CSS**.
+* **Secure Authentication:** User management and security handled by **Supabase**.
+* **Interactive Elements:** Includes carousels, toast notifications (`Sonner`), and smooth transitions.
 
-**Use Lovable**
+## 🛠️ Tech Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/dc6323dc-f398-4d05-a51b-17eaf0216a44) and start prompting.
+This project is built using the latest web technologies:
 
-Changes made via Lovable will be committed automatically to this repo.
+* **Frontend:** [React 18](https://reactjs.org/), [TypeScript](https://www.typescriptlang.org/)
+* **Build Tool:** [Vite](https://vitejs.dev/)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/), [Class Variance Authority (CVA)](https://cva.style/)
+* **UI Components:** [Shadcn UI](https://ui.shadcn.com/), [Radix UI](https://www.radix-ui.com/), [Lucide React](https://lucide.dev/) (Icons)
+* **Backend & Auth:** [Supabase](https://supabase.com/)
+* **State Management:** [TanStack Query](https://tanstack.com/query/latest)
+* **Form Handling:** [React Hook Form](https://react-hook-form.com/), [Zod](https://zod.dev/) (Validation)
 
-**Use your preferred IDE**
+## 🚀 Getting Started
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Follow these steps to set up the project locally on your machine.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Prerequisites
 
-Follow these steps:
+* Node.js (v18 or higher)
+* npm or bun
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Installation
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+1.  **Clone the repository**
+    ```bash
+    git clone [https://github.com/yourusername/brainscan-ai-buddy.git](https://github.com/yourusername/brainscan-ai-buddy.git)
+    cd brainscan-ai-buddy
+    ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+3.  **Environment Setup**
+    Create a `.env` file in the root directory. You will need your Supabase credentials.
+    
+    ```bash
+    touch .env
+    ```
+    
+    Add the following variables to your `.env` file:
+    ```env
+    VITE_SUPABASE_URL=your_supabase_project_url
+    VITE_SUPABASE_PUBLISHABLE_KEY=your_supabase_anon_key
+    VITE_SUPABASE_PROJECT_ID=your_project_id
+    ```
 
-**Edit a file directly in GitHub**
+4.  **Run the development server**
+    ```bash
+    npm run dev
+    ```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+    Open [http://localhost:8080](http://localhost:8080) (or the port shown in your terminal) to view it in the browser.
 
-**Use GitHub Codespaces**
+## 📂 Project Structure
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/dc6323dc-f398-4d05-a51b-17eaf0216a44) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+```text
+├── src/
+│   ├── components/      # Reusable UI components (Shadcn, etc.)
+│   ├── hooks/           # Custom React hooks
+│   ├── lib/             # Utilities (Supabase client, utils.ts)
+│   ├── pages/           # Application pages/routes
+│   ├── App.tsx          # Main application component
+│   └── main.tsx         # Entry point
+├── public/              # Static assets
+├── .env                 # Environment variables (do not commit this)
+├── eslint.config.js     # ESLint configuration
+├── tailwind.config.ts   # Tailwind CSS configuration
+└── package.json         # Dependencies and scripts
