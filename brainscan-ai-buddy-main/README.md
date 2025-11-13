@@ -41,7 +41,7 @@ Follow these steps to set up the project locally on your machine.
 
 1.  **Clone the repository**
     ```bash
-    git clone [https://github.com/yourusername/brainscan-ai-buddy.git](https://github.com/yourusername/brainscan-ai-buddy.git)
+    git clone [https://github.com/smriti0114/brainscan-ai-buddy.git](https://github.com/smriti0114/brainscan-ai-buddy.git)
     cd brainscan-ai-buddy
     ```
 
